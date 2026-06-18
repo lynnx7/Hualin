@@ -1,0 +1,226 @@
+baseURL: "https://examplesite.com/"
+title: 🎓Hualin Zhou
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Hualin Zhou
+  description: "Hualin Zhou"
+  keywords: [Blog, Portfolio, PaperMod]
+  author: Me
+  # author: ["Me", "You"] # multiple authors
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "<link / abs url>"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Hualin's Home"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: Hualin Zhou
+    subtitle: "Aloha!👋 I am a researcher working on several LLM Agent projects, supervised by <a style='text-decoration:underline;color: #ff6600;' href='https://zhen-tan-dmml.github.io/'>Prof. Tan Zheng.</a> 
+      Before I obtained my CS Honour degree at <a style='text-decoration:underline;color: #ff6600;' href='https://zhen-tan-dmml.github.io/'>University of Sydney (USYD)</a> supervised by <a style='text-decoration:underline;color: #ff6600;' href='https://profiles.sydney.edu.au/c.xu/about'>Prof. Xu Chang.</a></br></br>
+      My research centers on <b>LLM Agents</b>, with a particular interest in their reasoning and memory mechanisms for enhanced efficiency and explainability in applications. I am also dedicated to leveraging <b>Reinforcement Learning</b> and <b>RAG</b> to develop robust, adaptive intelligent systems.
+
+      <style>
+          /* 全局背景色，模拟原图外围的深灰色 */
+
+
+          /* 新闻盒子主体 */
+          .news-box {
+            background-color: #31231e; /* 暗红褐色背景 */
+            border: 2px solid #b35d43; /* 偏橘红色的边框 */
+            border-radius: 16px;      /* 圆角 */
+            padding: 12px 16px;        /* 内边距 */
+            max-width: 500px;          /* 限制最大宽度 */
+            margin: 40px auto; /* 上下留出40px间距，左右自动平分（实现居中） */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* 淡淡的阴影 */
+          }
+
+          /* 标题区域 */
+          .news-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: #ffffff;
+            gap: 3px;
+          }
+
+          /* 新闻列表容器 */
+          .news-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px; /* 每行之间的间距 */
+          }
+
+          /* 单条新闻行 */
+          .news-item {
+            display: flex;
+            align-items: flex-start;
+            line-height: 1.5;
+            font-size: 18px;
+          }
+
+          /* 日期和图标区域（固定宽度保证对齐） */
+          .news-date {
+            font-weight: bold;
+            color: #ffffff;
+            white-space: nowrap;
+            min-width: 120px; 
+            display: inline-block;
+          }
+
+          /* 新闻内容文本及超链接样式 */
+          .news-content {
+            color: #d1d1d1;
+          }
+          .news-content a {
+            color: #d1d1d1;
+            text-decoration: underline; 
+            text-underline-offset: 4px; /* 下划线稍微往下移一点，更美观 */
+          }
+          .news-content a:hover {
+            color: #ffffff; /* 鼠标悬停变亮 */
+          }
+
+          /* 专门针对论文标题的斜体样式 */
+          .paper-title {
+            font-style: italic;
+          }
+        </style>
+
+        <div class='news-box'>
+          <div class='news-title'>
+            <span>📰</span> News
+          </div>
+
+          <div class='news-list'>
+            
+            <div class='news-item'>
+              <span class='news-date'>5/2025: 🎉</span>
+              <span class='news-content'>Two paper accepted at ICML 2026!</span>
+            </div>
+
+
+
+          </div>
+        </div>
+
+      "
+    imageUrl: "https://media.licdn.com/dms/image/v2/D5603AQEtGPSPibmS8A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1718506592335?e=1783555200&v=beta&t=Hl3lDbMiixkplGZniRCJMNLUfx5FAjQUz2DWs_OTSVU"
+    imageWidth: 180
+    imageHeight: 180
+    imageTitle: my image
+    buttons:
+      - name: CV
+        url: "https://drive.google.com/file/d/1DvAoswWslpucn5J54fJcaGmIqNBuHa_I/view?usp=drive_link"
+      - name: Publications
+        url: publications
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: Welcome to my blog
+
+  socialIcons:
+    - name: email
+      url: "mailto:shinnx48@gmail.com "
+    - name: linkedin
+      url: "https://www.linkedin.com/in/jay-flynn-6807852a1/"
+    - name: github
+      url: "https://github.com/lynnx7"
+    - name: googlescholar
+      url: "https://scholar.google.co.uk/citations?user=xhEeSCsAAAAJ&hl=en&authuser=1"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/<path_to_repo>/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: publications
+      name: publications
+      url: /publications/
+      weight: 10
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # 允许在 Markdown 和配置中使用原始 HTML
+
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
